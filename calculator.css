@@ -1,0 +1,87 @@
+@font-face {
+    font-family: 'Tecnology';
+    src: url('Fonts/technology.regular.ttf');
+}
+
+@font-face {
+    font-family: 'LED-Calculator';
+    src: url('Fonts/LEDCalculator.ttf');
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background:#e9e6ed;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculator {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(4, 80px);
+    grid-template-rows: 160px  repeat(6, 60px);
+    background-color: #364960;
+    padding: 15px;
+    border-radius: 30px;
+}
+
+button {
+    cursor: pointer;
+    margin: 5px;
+    padding: 0;
+    border-radius: 12px;
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+    background-color:#939fa3;
+}
+
+button:active {
+    background-color: #655c7b;
+}
+
+.two-col {
+    grid-column: span 2;
+}
+
+.display {
+   
+    grid-column: 1 / -1;
+    padding: 11px;
+    display: flex;
+    margin: 10px 10px 20px;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: #a6ab7f;
+    border-radius: 6px;
+    text-align: right;
+    justify-content: space-between;
+    word-break: break-all;
+    color: black;
+    font-family: 'DotGothic16';
+}
+
+#operation {
+    font-family: 'LED-Calculator';
+    font-size: 1.8em;
+}
+
+#result {
+    font-family: 'Tecnology';
+    font-size: 3.5em;
+}
+
+#del, #allClear{
+    background-color: #aa6e81;
+}
+
+#equals {
+    background-color: rgb(5, 99, 18);
+}
